@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF753FE629F2CB46004755DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF753FE529F2CB46004755DA /* AppDelegate.swift */; };
+		FF753FE829F2CB46004755DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF753FE729F2CB46004755DA /* SceneDelegate.swift */; };
+		FF753FEA29F2CB46004755DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF753FE929F2CB46004755DA /* ViewController.swift */; };
+		FF753FED29F2CB46004755DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF753FEB29F2CB46004755DA /* Main.storyboard */; };
+		FF753FEF29F2CB4B004755DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF753FEE29F2CB4B004755DA /* Assets.xcassets */; };
+		FF753FF229F2CB4B004755DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF753FF029F2CB4B004755DA /* LaunchScreen.storyboard */; };
+		FF75400429F2D348004755DA /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF75400329F2D348004755DA /* AssetsLibrary.framework */; };
+		FF75400629F2D35E004755DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF75400529F2D35E004755DA /* CoreGraphics.framework */; };
+		FF75400829F2D369004755DA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF75400729F2D369004755DA /* CoreMedia.framework */; };
+		FF75400A29F2D376004755DA /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF75400929F2D376004755DA /* CoreFoundation.framework */; };
+		FF75400C29F2D381004755DA /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF75400B29F2D381004755DA /* Accelerate.framework */; };
+		FF75400E29F2D43C004755DA /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF75400D29F2D43C004755DA /* opencv2.framework */; };
+		FF75401129F2D61D004755DA /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = FF753FFE29F2CF7F004755DA /* OpenCVWrapper.mm */; };
+		FF75401329F2D65C004755DA /* OpenCVWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = FF753FFD29F2CF7F004755DA /* OpenCVWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF75401B29F2FCF2004755DA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF75401A29F2FCF2004755DA /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FF753FE229F2CB46004755DA /* OpenCVCanny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCVCanny.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF753FE529F2CB46004755DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF753FE729F2CB46004755DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FF753FE929F2CB46004755DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF753FEC29F2CB46004755DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF753FEE29F2CB4B004755DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF753FF129F2CB4B004755DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF753FF329F2CB4B004755DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF753FFC29F2CF7F004755DA /* OpenCVCanny-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenCVCanny-Bridging-Header.h"; sourceTree = "<group>"; };
+		FF753FFD29F2CF7F004755DA /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OpenCVWrapper.h; path = OpenCVCanny/OpenCVWrapper.h; sourceTree = SOURCE_ROOT; };
+		FF753FFE29F2CF7F004755DA /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = OpenCVWrapper.mm; path = OpenCVCanny/OpenCVWrapper.mm; sourceTree = SOURCE_ROOT; };
+		FF75400029F2D18E004755DA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FF75400329F2D348004755DA /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		FF75400529F2D35E004755DA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FF75400729F2D369004755DA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		FF75400929F2D376004755DA /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		FF75400B29F2D381004755DA /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		FF75400D29F2D43C004755DA /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = OpenCVCanny/opencv2.framework; sourceTree = "<group>"; };
+		FF75401A29F2FCF2004755DA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF753FDF29F2CB46004755DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF75401B29F2FCF2004755DA /* AVFoundation.framework in Frameworks */,
+				FF75400E29F2D43C004755DA /* opencv2.framework in Frameworks */,
+				FF75400C29F2D381004755DA /* Accelerate.framework in Frameworks */,
+				FF75400A29F2D376004755DA /* CoreFoundation.framework in Frameworks */,
+				FF75400829F2D369004755DA /* CoreMedia.framework in Frameworks */,
+				FF75400629F2D35E004755DA /* CoreGraphics.framework in Frameworks */,
+				FF75400429F2D348004755DA /* AssetsLibrary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF753FD929F2CB46004755DA = {
+			isa = PBXGroup;
+			children = (
+				FF753FE429F2CB46004755DA /* OpenCVCanny */,
+				FF753FE329F2CB46004755DA /* Products */,
+				FF753FF929F2CF36004755DA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF753FE329F2CB46004755DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF753FE229F2CB46004755DA /* OpenCVCanny.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF753FE429F2CB46004755DA /* OpenCVCanny */ = {
+			isa = PBXGroup;
+			children = (
+				FF753FE529F2CB46004755DA /* AppDelegate.swift */,
+				FF753FE729F2CB46004755DA /* SceneDelegate.swift */,
+				FF753FE929F2CB46004755DA /* ViewController.swift */,
+				FF753FEB29F2CB46004755DA /* Main.storyboard */,
+				FF753FEE29F2CB4B004755DA /* Assets.xcassets */,
+				FF753FF029F2CB4B004755DA /* LaunchScreen.storyboard */,
+				FF753FF329F2CB4B004755DA /* Info.plist */,
+				FF753FFD29F2CF7F004755DA /* OpenCVWrapper.h */,
+				FF753FFE29F2CF7F004755DA /* OpenCVWrapper.mm */,
+				FF753FFC29F2CF7F004755DA /* OpenCVCanny-Bridging-Header.h */,
+				FF75400029F2D18E004755DA /* PrefixHeader.pch */,
+			);
+			path = OpenCVCanny;
+			sourceTree = "<group>";
+		};
+		FF753FF929F2CF36004755DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF75401A29F2FCF2004755DA /* AVFoundation.framework */,
+				FF75400D29F2D43C004755DA /* opencv2.framework */,
+				FF75400B29F2D381004755DA /* Accelerate.framework */,
+				FF75400929F2D376004755DA /* CoreFoundation.framework */,
+				FF75400729F2D369004755DA /* CoreMedia.framework */,
+				FF75400529F2D35E004755DA /* CoreGraphics.framework */,
+				FF75400329F2D348004755DA /* AssetsLibrary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FF75401229F2D648004755DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF75401329F2D65C004755DA /* OpenCVWrapper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FF753FE129F2CB46004755DA /* OpenCVCanny */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF753FF629F2CB4B004755DA /* Build configuration list for PBXNativeTarget "OpenCVCanny" */;
+			buildPhases = (
+				FF75401229F2D648004755DA /* Headers */,
+				FF753FDE29F2CB46004755DA /* Sources */,
+				FF753FDF29F2CB46004755DA /* Frameworks */,
+				FF753FE029F2CB46004755DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenCVCanny;
+			productName = OpenCVCanny;
+			productReference = FF753FE229F2CB46004755DA /* OpenCVCanny.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF753FDA29F2CB46004755DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					FF753FE129F2CB46004755DA = {
+						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
+					};
+				};
+			};
+			buildConfigurationList = FF753FDD29F2CB46004755DA /* Build configuration list for PBXProject "OpenCVCanny" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF753FD929F2CB46004755DA;
+			productRefGroup = FF753FE329F2CB46004755DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF753FE129F2CB46004755DA /* OpenCVCanny */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF753FE029F2CB46004755DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF753FF229F2CB4B004755DA /* LaunchScreen.storyboard in Resources */,
+				FF753FEF29F2CB4B004755DA /* Assets.xcassets in Resources */,
+				FF753FED29F2CB46004755DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF753FDE29F2CB46004755DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF75401129F2D61D004755DA /* OpenCVWrapper.mm in Sources */,
+				FF753FEA29F2CB46004755DA /* ViewController.swift in Sources */,
+				FF753FE629F2CB46004755DA /* AppDelegate.swift in Sources */,
+				FF753FE829F2CB46004755DA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF753FEB29F2CB46004755DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF753FEC29F2CB46004755DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF753FF029F2CB4B004755DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF753FF129F2CB4B004755DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF753FF429F2CB4B004755DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "(SRCROOT)/OpenCVCanny/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF753FF529F2CB4B004755DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "(SRCROOT)/OpenCVCanny/PrefixHeader.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF753FF729F2CB4B004755DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2T7NF5QJYD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenCVCanny",
+				);
+				GCC_PREFIX_HEADER = OpenCVCanny/PrefixHeader.pch;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OpenCVCanny/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = es.ua.mastermoviles.OpenCVCanny;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenCVCanny/OpenCVCanny-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF753FF829F2CB4B004755DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2T7NF5QJYD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenCVCanny",
+				);
+				GCC_PREFIX_HEADER = OpenCVCanny/PrefixHeader.pch;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OpenCVCanny/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = es.ua.mastermoviles.OpenCVCanny;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenCVCanny/OpenCVCanny-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF753FDD29F2CB46004755DA /* Build configuration list for PBXProject "OpenCVCanny" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF753FF429F2CB4B004755DA /* Debug */,
+				FF753FF529F2CB4B004755DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF753FF629F2CB4B004755DA /* Build configuration list for PBXNativeTarget "OpenCVCanny" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF753FF729F2CB4B004755DA /* Debug */,
+				FF753FF829F2CB4B004755DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF753FDA29F2CB46004755DA /* Project object */;
+}
